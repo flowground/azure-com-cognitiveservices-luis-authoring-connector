@@ -1,0 +1,24 @@
+{
+    "type": "object",
+    "properties": {
+        "appId": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "versionId": {
+            "required": true,
+            "type": "string"
+        },
+        "entityId": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "roleId": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        }
+    }
+}

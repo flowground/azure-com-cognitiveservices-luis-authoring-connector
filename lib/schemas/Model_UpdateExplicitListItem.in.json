@@ -1,0 +1,34 @@
+{
+    "type": "object",
+    "properties": {
+        "appId": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "versionId": {
+            "required": true,
+            "type": "string"
+        },
+        "entityId": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "itemId": {
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+        },
+        "requestBody": {
+            "description": "Model object for updating an explicit list item.",
+            "properties": {
+                "explicitListItem": {
+                    "description": "The explicit list item.",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

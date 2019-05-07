@@ -1,0 +1,14 @@
+{
+    "type": "object",
+    "properties": {
+        "appId": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "Authorization": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

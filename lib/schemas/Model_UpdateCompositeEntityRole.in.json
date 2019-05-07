@@ -1,0 +1,34 @@
+{
+    "type": "object",
+    "properties": {
+        "appId": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "versionId": {
+            "required": true,
+            "type": "string"
+        },
+        "cEntityId": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "roleId": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "requestBody": {
+            "description": "Object model for updating an entity role.",
+            "properties": {
+                "name": {
+                    "description": "The entity role name.",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

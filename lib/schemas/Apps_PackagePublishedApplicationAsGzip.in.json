@@ -1,0 +1,15 @@
+{
+    "type": "object",
+    "properties": {
+        "appId": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "slotName": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        }
+    }
+}

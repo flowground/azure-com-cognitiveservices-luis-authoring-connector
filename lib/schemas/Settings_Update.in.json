@@ -1,0 +1,28 @@
+{
+    "type": "object",
+    "properties": {
+        "appId": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "versionId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "Object model of an application version setting.",
+            "properties": {
+                "name": {
+                    "description": "The application version setting name.",
+                    "type": "string"
+                },
+                "value": {
+                    "description": "The application version setting value.",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

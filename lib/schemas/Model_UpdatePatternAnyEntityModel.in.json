@@ -1,0 +1,36 @@
+{
+    "type": "object",
+    "properties": {
+        "appId": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "versionId": {
+            "required": true,
+            "type": "string"
+        },
+        "entityId": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "requestBody": {
+            "description": "Model object for updating a Pattern.Any entity model.",
+            "properties": {
+                "explicitList": {
+                    "description": "The Pattern.Any explicit list.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "name": {
+                    "description": "The model name.",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

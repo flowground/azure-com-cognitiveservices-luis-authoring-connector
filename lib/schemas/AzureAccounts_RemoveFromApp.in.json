@@ -1,0 +1,37 @@
+{
+    "type": "object",
+    "properties": {
+        "appId": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "Authorization": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "Defines the azure account information object.",
+            "properties": {
+                "accountName": {
+                    "description": "The azure account name.",
+                    "type": "string"
+                },
+                "azureSubscriptionId": {
+                    "description": "The id for the azure subscription.",
+                    "type": "string"
+                },
+                "resourceGroup": {
+                    "description": "The azure resource group name.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "azureSubscriptionId",
+                "resourceGroup",
+                "accountName"
+            ],
+            "type": "object"
+        }
+    }
+}

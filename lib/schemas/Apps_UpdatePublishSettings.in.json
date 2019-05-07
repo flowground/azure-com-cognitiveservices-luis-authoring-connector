@@ -1,0 +1,31 @@
+{
+    "type": "object",
+    "properties": {
+        "appId": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "requestBody": {
+            "description": "Object model for updating an application's publish settings.",
+            "properties": {
+                "sentimentAnalysis": {
+                    "description": "Setting sentiment analysis as true returns the Sentiment of the input utterance along with the response",
+                    "type": "boolean",
+                    "nullable": false
+                },
+                "speech": {
+                    "description": "Setting speech as public enables speech priming in your app",
+                    "type": "boolean",
+                    "nullable": false
+                },
+                "spellChecker": {
+                    "description": "Setting spell checker as public enables spell checking the input utterance.",
+                    "type": "boolean",
+                    "nullable": false
+                }
+            },
+            "type": "object"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "type": "object",
+    "properties": {
+        "appId": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "versionId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "Model object for creating a regex entity model.",
+            "properties": {
+                "name": {
+                    "description": "The model name.",
+                    "type": "string"
+                },
+                "regexPattern": {
+                    "description": "The regex entity pattern.",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

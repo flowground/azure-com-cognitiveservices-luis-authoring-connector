@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": {
+        "appId": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "versionId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "items": {
+                "format": "uuid",
+                "type": "string"
+            },
+            "type": "array"
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "type": "object",
+    "properties": {
+        "appId": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "versionId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "items": {
+                "description": "Object model for updating a pattern.",
+                "properties": {
+                    "id": {
+                        "description": "The pattern ID.",
+                        "format": "uuid",
+                        "type": "string"
+                    },
+                    "intent": {
+                        "description": "The intent's name which the pattern belongs to.",
+                        "type": "string"
+                    },
+                    "pattern": {
+                        "description": "The pattern text.",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        }
+    }
+}

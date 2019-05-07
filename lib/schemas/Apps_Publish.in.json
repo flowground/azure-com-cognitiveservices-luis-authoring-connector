@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+        "appId": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "requestBody": {
+            "description": "Object model for publishing a specific application version.",
+            "properties": {
+                "isStaging": {
+                    "default": false,
+                    "description": "Indicates if the staging slot should be used, instead of the Production one.",
+                    "type": "boolean"
+                },
+                "versionId": {
+                    "description": "The version ID to publish.",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

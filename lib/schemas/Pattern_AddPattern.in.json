@@ -1,0 +1,28 @@
+{
+    "type": "object",
+    "properties": {
+        "appId": {
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+        },
+        "versionId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "Object model for creating a pattern",
+            "properties": {
+                "intent": {
+                    "description": "The intent's name which the pattern belongs to.",
+                    "type": "string"
+                },
+                "pattern": {
+                    "description": "The pattern text.",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}
